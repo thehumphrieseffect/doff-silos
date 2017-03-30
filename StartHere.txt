@@ -1,1 +1,13 @@
-Simple Project Overview
+Project Overview
+
+This workflow enables direct ArcSDE exports of .shp into folders for use by AutoCAD.
+This is intended to be automated via a Task Scheduler.
+
+Problem:
+Due to software version and interoperability issues, the FDO connection
+function within AutoCAD fails to connect to ESRI's SDE.
+Stack: SQL Server with SDE v 10.3, ArcGIS Desktop 10.4, AutoCAD v 16.
+
+Solution:
+Export .shp directly from SDE to folders viewable on network. Automate process for
+weekly cycle, create .log file for reference, create ‘script fail' email.
